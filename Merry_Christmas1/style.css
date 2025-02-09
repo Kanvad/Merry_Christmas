@@ -1,0 +1,70 @@
+#title1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+}
+
+body {
+    background-image: url(red-2892235_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main {
+    color: rgb(238, 238, 22);
+    font-size: 20px;
+}
+#box1 {
+    width: 60%;
+    height: 40%;
+    margin: 0 18% 0 18%;
+}
+section {
+    position: relative;
+    display: contents;
+}
+.box-e,.box-e::after,.box-e::before{
+    content: "";
+    position: absolute;
+    top: -650px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 250px, #fff, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+    radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+    radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+    radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+    background-size: 650px 650px;
+    animation: animate 6s linear infinite;
+}
+.box-e::after{
+    margin-left: -250px;
+    opacity: 0.6;
+    filter: blur(2px);
+    animation-duration: 6s;
+    animation-direction: reverse;
+}
+.box-e::before{
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+    animation-direction: reverse;
+    animation-duration: 7s;
+}
+@keyframes animate{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(650px);
+    }
+}

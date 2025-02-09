@@ -1,0 +1,120 @@
+body
+{
+    background-image: url(moon-31665_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+i
+{
+    color: azure;
+    font-size: 50px;
+    align-items: center;
+}
+p
+{
+    color: goldenrod;
+    font-size: 25px;
+}
+
+
+#box1
+{
+    margin: 5% 10%;
+}
+
+
+#text-box
+{
+    margin: 10% 5%;
+    width:  80vh;
+    height: 50vh;
+}
+
+
+.wrapper
+{
+    margin: 0;
+    padding: 0;
+}
+
+#aaa{
+    position: relative;
+    display:contents;
+}
+
+
+#aaa span:nth-child(2){
+    top: 18%;
+    left: 20%;
+    animation-delay: 2.5s;
+}
+#aaa span:nth-child(3){
+    top: 22%;
+    left: 90%;
+    animation-delay: 5s;
+}
+
+#aaa span:nth-child(4){
+    top: 70%;
+    left: 40%;
+    animation-delay: 5s;
+}
+#aaa span:nth-child(5){
+    top: 15%;
+    left: 60%;
+    animation-delay: 3s;
+}
+#aaa span:nth-child(6){
+    top: 22%;
+    left: 11%;
+    animation-delay: 1s;
+}
+#aaa span:nth-child(7){
+    top: 63%;
+    left: 67%;
+    animation-delay: 0s;
+}
+#aaa span:nth-child(8){
+    top: 16%;
+    left: 83%;
+    animation-delay: 0.5s;
+}
+#aaa span:nth-child(9){
+    top: 8%;
+    left: 95%;
+    animation-delay: 1.5s;
+}
+#aaa span:nth-child(10){
+    top: 4%;
+    left: 32%;
+    animation-delay: 3.5s;
+}
+
+#aaa span
+{
+    
+    
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    background-image: url(white-star-icon-13230.png);
+    background-repeat: repeat;
+    background-size: cover;
+    animation: star 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 6px #E1F1F4);
+}
+@keyframes star {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
